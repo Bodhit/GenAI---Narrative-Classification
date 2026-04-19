@@ -1,0 +1,11 @@
+# EDD Narrative Classification Pipeline — dependencies
+# Install into a virtual environment:
+#   python3 -m venv .venv
+#   source .venv/bin/activate
+#   pip install -r requirements.txt
+
+pandas>=2.0          # data loading, sampling, output CSV
+tqdm>=4.65           # progress bars during classification
+requests>=2.31       # HTTP calls to local Ollama /api/chat
+anthropic>=0.40      # Claude API SDK (messages.create, RateLimitError, APIStatusError)
+openai>=1.50 
